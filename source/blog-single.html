@@ -1,0 +1,77 @@
+@@include('header.htm')
+
+@@include('blocks/navigation.htm')
+
+@@include('blocks/page-title.htm', {
+  "page-title" : "Our Blog",
+  "page-link": "blog.html",
+  "single-page-title": "Blog Details",
+  "nasted": "nasted",
+  "description" : "Stay updated with the latest insights, trends, and tips in the world of education and learning. Explore our articles crafted to inspire students and educators alike."
+})
+
+<!-- blog details -->
+<section class="section-sm bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <img src="images/blog/blog-single.jpg" alt="blog-thumb" class="img-fluid w-100">
+      </div>
+      <div class="col-12">
+        <ul class="list-inline">
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">Post:</span>Samir BELLILI</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light">August 28, 2017</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><i class="ti-book mr-2"></i>Read 289</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><i class="ti-share mr-2"></i>289</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><a class="text-light" href="blog-single.html"><i class="ti-comments mr-2"></i>265</a></li>
+        </ul>
+      </div>
+      <!-- border -->
+      <div class="col-12 mt-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+      <!-- blog contect -->
+      <div class="col-12 mb-5">
+        <h2>The Evolution of Modern Education: Embracing Digital Learning</h2>
+        <p>In recent years, education has witnessed a dramatic transformation, shifting from traditional classrooms to dynamic digital platforms. This change is not just about convenience—it's about accessibility, adaptability, and innovation. With the rise of online courses and virtual classrooms, learners from all walks of life can now access quality education from anywhere in the world.</p>
+        <p>Digital learning enables personalized learning experiences, catering to individual learning speeds and preferences. Interactive tools, multimedia content, and AI-driven recommendations are reshaping the way students engage with knowledge. Institutions and educators are embracing these changes to foster more inclusive and effective learning environments.</p>
+        <p>As we continue to integrate technology into education, it's essential to strike a balance between human interaction and digital advancement. The goal is to enhance, not replace, traditional teaching methods. By embracing this evolution, we open doors to new possibilities and empower future generations with the tools they need to succeed.</p>
+      </div>
+      <!-- comment box -->
+      <div class="col-12">
+        <form action="#" class="row">
+          <div class="col-sm-6">
+            <input type="text" class="form-control mb-4" id="name" name="name" placeholder="Full Name" required>
+          </div>
+          <div class="col-sm-6">
+            <input type="email" class="form-control mb-4" id="mail" name="mail" placeholder="Email Address" required>
+          </div>
+          <div class="col-12">
+            <textarea name="comment" id="comment" class="form-control mb-4" placeholder="Comment Here..." required></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" value="send" class="btn btn-primary">post comment</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+<!-- recommended post -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Recommended</h2>
+      </div>
+    </div>
+    @@include('blocks/blog.htm')
+  </div>
+</section>
+<!-- /recommended post -->
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')

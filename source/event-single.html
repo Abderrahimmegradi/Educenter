@@ -1,0 +1,146 @@
+@@include('header.htm')
+
+@@include('blocks/navigation.htm')
+
+@@include('blocks/page-title.htm', { "page-title" : "Upcoming Workshops", "page-link": "events.html", "single-page-title":
+"Workshop Details", "nasted": "nasted", "description" : "Join our engaging workshops that combine hands-on activities with expert-led discussions to enhance your learning experience." })
+
+<!-- event single -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Advanced English Communication</h2>
+      </div>
+      <!-- event image -->
+      <div class="col-12 mb-4">
+        <img src="images/events/event-single.jpg" alt="event thumb" class="img-fluid w-100">
+      </div>
+    </div>
+    <!-- event info -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-9">
+        <ul class="list-inline">
+          <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-location-pin text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">LOCATION</h6>
+                <p class="mb-0">Algiers, Algeria</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-calendar text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">DATE</h6>
+                <p class="mb-0">May 5–10, 2025</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-time text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">TIME</h6>
+                <p class="mb-0">10:00 AM</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-wallet text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">ENTRY FEE</h6>
+                <p class="mb-0">From: $149</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 text-lg-right text-left">
+        <a href="event-single.html" class="btn btn-primary">Register Now</a>
+      </div>
+      <!-- border -->
+      <div class="col-12 mt-4 order-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+    </div>
+    <!-- event details -->
+    <div class="row">
+      <div class="col-12 mb-50">
+        <h3>About the Workshop</h3>
+        <p>This workshop is designed to help participants build fluency in spoken English through interactive sessions, real-world practice, and engaging group discussions. Attendees will learn advanced vocabulary, refine pronunciation, and develop confidence in public speaking scenarios. Our expert trainers will guide you step-by-step through practical activities that make learning both fun and effective.</p>
+      </div>
+    </div>
+    <!-- event speakers -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mb-4">Guest Speakers</h3>
+      </div>
+      <!-- speakers -->
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="media">
+          <img class="mr-3 img-fluid" src="images/event-speakers/speaker-1.jpg" alt="speaker">
+          <div class="media-body">
+            <h4 class="mt-0">Ali MEGRADI</h4>
+            Linguist
+          </div>
+        </div>
+      </div>
+      <!-- speakers -->
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="media">
+          <img class="mr-3 img-fluid" src="images/event-speakers/speaker-2.jpg" alt="speaker">
+          <div class="media-body">
+            <h4 class="mt-0">Malek BOULGUANE</h4>
+            Language Coach
+          </div>
+        </div>
+      </div>
+      <!-- speakers -->
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="media">
+          <img class="mr-3 img-fluid" src="images/event-speakers/speaker-3.jpg" alt="speaker">
+          <div class="media-body">
+            <h4 class="mt-0">Sofian RAHMANI</h4>
+            Public Speaker
+          </div>
+        </div>
+      </div>
+      <!-- speakers -->
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="media">
+          <img class="mr-3 img-fluid" src="images/event-speakers/speaker-4.jpg" alt="speaker">
+          <div class="media-body">
+            <h4 class="mt-0">Toufik HENNOUNE</h4>
+            Communication Expert
+          </div>
+        </div>
+      </div>
+      <!-- border -->
+      <div class="col-12 mt-4 order-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /event single -->
+
+<!-- more event -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Related Workshops</h2>
+      </div>
+    </div>
+    @@include('blocks/events.htm')
+  </div>
+</section>
+<!-- /more event -->
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')
